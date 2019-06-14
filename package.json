@@ -1,0 +1,15 @@
+{
+  "name": "socket-chat-example",
+  "version": "0.0.1",
+  "description": "Screen Share Test",
+  "dependencies": {
+    "express": "^4.15.2",
+    "ffmpeg-static": "^2.4.0",
+    "robotjs": "^0.5.1",
+    "socket.io": "^2.2.0",
+    "ws": "^7.0.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
