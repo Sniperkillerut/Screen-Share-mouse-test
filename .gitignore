@@ -1,6 +1,9 @@
 # Created by https://www.gitignore.io/api/node
 auth.js
 .vscode
+.eslint.json
+.babelrc
+.gitignore
 static/
 static
 client/static
