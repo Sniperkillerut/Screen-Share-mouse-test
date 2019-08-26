@@ -38,7 +38,7 @@
         // });
 
         $("#video-canvas").mousemove(function(e) {
-          socket.emit('mouse pos', e.pageX/ $("#video-canvas").width() +","+e.pageY/ $("#video-canvas").height());
+          socket.emit('mouse pos', (e.pageX-$("#video-canvas").offset().left) +","+(e.pageY- $("#video-canvas").offset().top));
         })
         /*socket.on('video-stream',function(data){
 

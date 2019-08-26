@@ -23,8 +23,8 @@ io.on('connection', function(socket){
   // })
   socket.on('mouse pos',function(mpos) {
     var mouse = mpos.split(',')
-    robot.moveMouse(mouse[0]*1920,mouse[1]*1080)
-    console.log(mouse[0] * 1920 + ',' + mouse[1] * 1080)
+    robot.moveMouse(mouse[0]/5,mouse[1]/15)
+    console.log(mouse[0] +','+ mouse[1] )
   })
 })
 
@@ -37,7 +37,7 @@ const { spawn } = require('child_process')
 
 const process2 = spawn(
   ffmpeg,
-  ['-probesize', '20M', '-f', 'gdigrab', '-framerate', '30','-i', 'desktop', '-vcodec', 'mpeg1video', '-s', '1920x1080', '-b:v', '1000k', '-r', '30', '-bf', '0', '-codec:a', 'mp2', '-ar', '44100', '-ac', '1', '-b:a', '128k', '-f', 'mpegts', '-'],
+  ['-probesize', '20M', '-f', 'gdigrab', '-framerate', '30','-i', 'desktop', '-vcodec', 'mpeg1video', '-s', '1920x1080', '-b:v', '4800k', '-r', '30', '-bf', '0', '-codec:a', 'mp2', '-ar', '44100', '-ac', '1', '-b:a', '128k', '-f', 'mpegts', '-'],
   { stdio: 'pipe' }
 )
 // ['-probesize', '10M', '-f', 'gdigrab', '-framerate', '30', '-i', 'desktop', '-f', 'flv', '-'],
