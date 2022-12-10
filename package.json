@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Screen Share Test",
   "dependencies": {
-    "express": "^4.15.2",
+    "express": "^4.17.3",
     "ffmpeg-static": "^2.4.0",
     "robotjs": "^0.5.1",
     "socket.io": "^2.2.0",
